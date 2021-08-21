@@ -426,6 +426,7 @@ function TakeVehicle(k)
         TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
         TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(veh))
         SetVehicleEngineOn(veh, true, true)
+	SetVehicleLivery(veh, 0)
         dutyPlate = GetVehicleNumberPlateText(veh)
     end, coords, true)
 end
